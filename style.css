@@ -1,0 +1,147 @@
+body {
+	margin: 0 auto;
+}
+
+.wrapper {
+	max-width: 1400px;
+	margin: 0 auto;
+	background-color: white;
+}
+
+.headers {
+	background-color: black;
+}
+header{
+     justify-content: space-between;	
+}
+
+header, .content {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap; 
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 40px 0;	
+}
+.content {
+	padding: 0;
+	justify-content:center;
+}
+
+ul 	{
+	margin: 0;
+	padding: 0;
+	display: flex;
+
+}
+
+li {
+	list-style: none; 
+	margin-right: 15px;
+	font-style: Tahoma;
+	font-size: 22px;
+	text-align: center;
+
+}
+
+ul li a {
+	text-decoration: none;
+	color: white;
+	border: 2px solid transparent;
+}
+
+ul li a:hover{
+	color: white;
+	background: gray;
+	border-radius: 5px;
+	border-top: 2px solid blue;
+}
+.content img:hover {
+	transform: scale(1.05);
+	box-shadow: 0 0 8px 0px black;
+}
+
+@media screen and (max-width: 796px) {
+	header,.menu {
+		flex-direction: column;
+		padding: 20px 0;
+	}
+	header img,  .menu {
+		display: inline-block;
+		margin-bottom: 20px;
+	}
+
+	header ul,.menu {
+		flex-direction: column;
+	}
+	
+	header ul li ,.menu{
+		margin: 7px 0 7px 0; 
+	}
+}
+
+.menu {
+	position: absolute;
+   height: 500px;
+    width: 1400px;
+	margin: 0 auto;
+	z-index: 99;
+}
+
+.contents {
+  padding: 20px 0;
+  background-color: #fff;
+  box-sizing: border-box;
+  position: absolute;
+  top:  612px;
+  width: 1400px;
+  margin:0 auto;
+
+}
+.content img{
+display: inline-block;
+width: 30%;
+margin: 15px; 
+transition: .4s;
+cursor: pointer;
+}
+.text{
+	width: 1400px;
+	color:white;
+	position: absolute;
+	list-style: none; 
+	margin: 20px auto;
+	font-style: Arial;
+	font-size: 60px;
+	text-align: center;
+	z-index: 100; 
+}
+.text2 {
+	width: 1400px;
+	color:white;
+	position: absolute;
+	margin: 200px auto;
+	font-style: Arial;
+	font-size: 30px;
+	text-align: center;
+	z-index: 100;
+}
+.text3 {
+	width: 1400px;
+	color:white;
+	position: absolute;
+	margin: 300px auto;
+	font-style: Arial;
+	font-size: 30px;
+	text-align: center;
+	background: Red;
+	display: inline-block;
+	margin: 0 auto;
+	z-index: 100;
+	top: 300px;
+	
+}
+
+ 
+
